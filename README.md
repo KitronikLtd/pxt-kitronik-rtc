@@ -2,7 +2,8 @@
 
 # Kitronik blocks for micro:bit
 
-Blocks that support [Kitronik RTC board for the micro:bit]
+Blocks that support [Kitronik kits and shields for the micro:bit](https://www.kitronik.co.uk/microbit.html)
+This package is for the [Kitronik RTC Board] (hhtp://www.kitronik.co.uk/5635)
 
 ## RTC
 
