@@ -61,3 +61,17 @@ basic.forever(() => {
     basic.pause(1000)
 })
 ```
+
+## License
+
+MIT
+
+## Supported targets
+
+* for PXT/microbit
+(The metadata above is needed for package search.)
+
+
+```package
+pxt-kitronik-rtc=github:KitronikLtd/pxt-kitronik-rtc
+```
