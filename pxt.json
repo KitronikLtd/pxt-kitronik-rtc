@@ -1,6 +1,6 @@
 {
     "name": "pxt-kitronik-rtc",
-    "version": "0.0.1",
+    "version": "1.0.1",
     "description": "Blocks to simplify using Kitronik RTC board",
     "license": "MIT",
     "dependencies": {
@@ -8,7 +8,6 @@
     },
     "files": [
         "README.md",
-        "ns.ts",
         "rtc.ts"
     ],
     "testFiles": [
