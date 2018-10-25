@@ -216,7 +216,7 @@ namespace kitronik_RTC {
         let decHours = bcdToDec(currentHours, RTC_HOURS_REG)						//Convert number to Decimal
 
         //Combine hours,minutes and seconds in to one string
-        let strTime: string = "" + decHours / 10 + decHours % 10 + ":" + decMinutes / 10 + decMinutes % 10 + ":" + decSeconds / 10 + decSeconds % 10
+        let strTime: string = "" + ((decHours / 10)>>0) + decHours % 10 + ":" + ((decMinutes / 10)>>0) + decMinutes % 10 + ":" + ((decSeconds / 10)>>0) + decSeconds % 10
 
         return strTime
     }
@@ -314,7 +314,7 @@ namespace kitronik_RTC {
         let decYears = bcdToDec(currentYear, RTC_YEAR_REG)					//Convert number to Decimal
 
         //let strDate: string = decDay + "/" + decMonths + "/" + decYears
-        let strDate: string = "" + (decDay / 10) + (decDay % 10) + "/" + (decMonths / 10) + (decMonths % 10) + "/" + (decYears / 10) + (decYears % 10)
+        let strDate: string = "" + ((decDay / 10)>>0) + (decDay % 10) + "/" + ((decMonths / 10)>>0) + (decMonths % 10) + "/" + ((decYears / 10)>>0) + (decYears % 10)
         return strDate
     }
 
