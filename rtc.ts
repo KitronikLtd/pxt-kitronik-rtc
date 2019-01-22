@@ -66,10 +66,10 @@ namespace kitronik_RTC {
             case RTC_MINUTES_REG:
                 mask = 0x70
                 break;
+			case RTC_HOURS_REG:           //case statments fall through as both require same mask value
             case RTC_DAY_REG:
                 mask = 0x30
                 break;
-            case RTC_HOURS_REG:           //case statments fall through as both require same mask value
             case RTC_MONTH_REG:
                 mask = 0x10
                 break;
